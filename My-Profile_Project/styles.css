@@ -1,0 +1,209 @@
+
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.firstbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 50rem;
+  height: 60rem;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 5%;
+  border: 0.1rem solid white;
+  box-shadow: 0 0 200px 10px rgb(0, 157, 255);
+}
+
+.my-image img {
+  width: 15rem;
+  height: 15rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.name h1 {
+  font-size: 2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  font-weight: 500;
+}
+
+.tech-stack p {
+  color: white;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}
+.button-box{
+    display:flex;
+    gap: 0.5rem;
+}
+
+.button-box button {
+  padding: 0.5rem;
+  background-color: rgb(54, 54, 54);
+  border: 0.1rem solid white;
+  border-radius: 0.4rem;
+  color: white;
+}
+.button-box button:hover{
+    background-color: white;
+    color:  black;
+    border-color: rgb(255, 255, 255);
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.3);
+}
+.button-box .bt2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  
+}
+
+.bt2 a{
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+.animation-circle-1 {
+  height: 10rem;
+  width: 10rem;
+  background-color: rgba(0, 106, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 150px 10px rgb(0, 157, 255);
+  margin-bottom: 25rem;
+  margin-right: 2rem;
+  animation: MoveUpDown1 linear infinite alternate;
+  transition: top 1s ease-in-out;
+}
+
+.animation-circle-2 {
+  height: 10rem;
+  width: 10rem;
+  background-color: rgba(0, 106, 255, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 150px 10px rgb(0, 157, 255);
+  margin-top: 25rem;
+  margin-left: 2.3rem;
+  animation: MoveUpDown2 linear infinite alternate;
+  transition: top 1s ease-in-out;
+}
+
+@keyframes MoveUpDown1 {
+  0% {
+    top: -5rem;
+  }
+  50% {
+    top: 5rem;
+  }
+  100% {
+    top: -5rem;
+  }
+}
+
+@keyframes MoveUpDown2 {
+  0% {
+    top: 5rem;
+  }
+  50% {
+    top: -5rem;
+  }
+  100% {
+    top: 5rem;
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .main-box {
+    width: 50%;
+    height: auto;
+  }
+
+  .my-image img {
+    width: 6rem;
+    height: 4rem;
+  }
+
+  .name h1 {
+    font-size: 1.5rem;
+  }
+
+  .tech-stack p {
+    font-size: 1rem;
+  }
+
+  .button-box button {
+    padding: 0.2rem;
+  }
+
+  .button-box .bt2 {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+  }
+  .animation-circle-1 {
+    height: 3rem;
+    width: 12vw;
+    background-color: rgba(0, 106, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 100px 10px rgb(0, 157, 255);
+    
+  }
+
+  .animation-circle-2 {
+    height: 3rem;
+    width: 12vw;
+    background-color: rgba(0, 106, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 100px 10px  rgb(0, 157, 255);
+  }
+
+
+  .button-box button {
+    padding: 0.2rem;
+    background-color: rgb(54, 54, 54);
+    border: 0.1rem solid white;
+    border-radius: 0.2rem;
+    color: white;
+  }
+
+
+  .button-box button:hover{
+    background-color: rgb(119, 115, 115);
+    color:  black;
+    border-color: black;
+    font-weight: bold;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.button-box{
+  border-radius: 1rem;
+  
+}
+
+
+}
